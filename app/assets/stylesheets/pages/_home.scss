@@ -2,3 +2,15 @@
 .container {
   width: 400px;
 }
+
+.navbar{
+  background-image: cl_image_tag("samples/landscapes/beach-boat.jpg");
+}
+
+.card {
+  height: 300px;
+  color: white;
+}
+
+.card.int {
+}
