@@ -1,0 +1,9 @@
+<h1>Cocktails list</h1>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+    <li><%= cocktail[:name] %> <%= link_to "details", cocktail_path(cocktail) %> <%= link_to 'delete', cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure? Really?"} %> </li>
+  <% end %>
+</ul>
+
+<%= link_to "add cocktail", new_cocktail_path %>
